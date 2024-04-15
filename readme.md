@@ -71,5 +71,7 @@ curl -X PUT -H "Content-Type: application/json" -d '{"id":1,"title":"Updated Tas
 
 # Delete a task by ID (DELETE /tasks/{id})
 curl -X DELETE http://localhost:8080/tasks/1
-```
 
+# Mark a task a complete (PUT /task{id}/complete)
+curl -X PUT http://localhost:8080/tasks/1/complete
+```
