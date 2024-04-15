@@ -80,7 +80,9 @@ function TaskList() {
 											: 'bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600'
 									}
 									onClick={(e) => handleTaskMarkComplete(e, task.id)}>
-									Mark Complete
+									{
+										task.completed ? 'Completed' : 'Mark as Completed'
+									}
 								</button>
 
 								<button
