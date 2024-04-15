@@ -10,7 +10,6 @@ public class Task {
     private int priority;
     private boolean completed;
 
-    // Constructor
     public Task(long id, String title, String description, LocalDate dueDate, int priority, boolean completed) {
         this.id = id;
         this.title = title;
@@ -20,7 +19,6 @@ public class Task {
         this.completed = completed;
     }
 
-    // Getters and Setters
     public long getId() {
         return id;
     }
@@ -69,7 +67,6 @@ public class Task {
         this.completed = completed;
     }
 
-    // toString method for printing task details
     @Override
     public String toString() {
         return "Task{" +

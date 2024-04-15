@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/tasks")
-@CrossOrigin
+@CrossOrigin    
 public class TaskController {
 
     @Autowired
@@ -49,6 +49,7 @@ public class TaskController {
         return new ResponseEntity<>(updatedTask, HttpStatus.OK);
     }
 
+    // Update a task as complete
     @PutMapping("/{id}/complete")
     public ResponseEntity<Task> markComplete(@PathVariable("id") long id) {
         Task completedTask = taskService.markComplete(id);

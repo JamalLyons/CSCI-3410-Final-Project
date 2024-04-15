@@ -12,24 +12,20 @@ public class TaskService {
     private final Map<Long, Task> taskMap = new HashMap<>();
     private long nextId = 1;
 
-    // Get all tasks
     public List<Task> getAllTasks() {
         return new ArrayList<>(taskMap.values());
     }
 
-    // Get a task by ID
     public Task getTaskById(long id) {
         return taskMap.get(id);
     }
 
-    // Create a new task
     public Task createTask(Task task) {
         task.setId(nextId++);
         taskMap.put(task.getId(), task);
         return task;
     }
 
-    // Update an existing task
     public Task updateTask(long id, Task task) {
         if (taskMap.containsKey(id)) {
             task.setId(id);
@@ -49,7 +45,6 @@ public class TaskService {
         return null;
     }
 
-    // Delete a task by ID
     public void deleteTask(long id) {
         taskMap.remove(id);
     }
