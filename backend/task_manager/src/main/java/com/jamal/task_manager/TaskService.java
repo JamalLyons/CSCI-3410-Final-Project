@@ -39,6 +39,16 @@ public class TaskService {
         return null;
     }
 
+    public Task markComplete(long id) {
+        if(taskMap.containsKey(id)) {
+            Task task = taskMap.get(id);
+            task.setCompleted(true);
+            taskMap.put(id, task);
+        }
+
+        return null;
+    }
+
     // Delete a task by ID
     public void deleteTask(long id) {
         taskMap.remove(id);

@@ -35,7 +35,7 @@ function CreateTask() {
 
 	return (
 		<div className='bg-gray-100 p-4 rounded-lg'>
-			<h2 className='text-xl font-bold mb-4'>Create Task</h2>
+			<h2 className='text-xl font-bold mb-4'>Create New Task</h2>
 			<form onSubmit={handleSubmit}>
 				<div className='mb-4'>
 					<label

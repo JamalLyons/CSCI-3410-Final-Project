@@ -49,6 +49,17 @@ public class TaskController {
         return new ResponseEntity<>(updatedTask, HttpStatus.OK);
     }
 
+    @PutMapping("/{id}/complete")
+    public ResponseEntity<Task> markComplete(@PathVariable("id") long id) {
+        Task completedTask = taskService.markComplete(id);
+
+        if (completedTask == null ) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
     // Delete a task by ID
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteTask(@PathVariable("id") long id) {

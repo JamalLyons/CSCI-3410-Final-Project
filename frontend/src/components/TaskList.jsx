@@ -18,10 +18,10 @@ function TaskList() {
 		// Fetch tasks initially
 		fetchTasks();
 
-		// Fetch tasks every 5 seconds
+		// Fetch tasks every 3 seconds
 		const interval = setInterval(() => {
 			fetchTasks();
-		}, 5000);
+		}, 3000);
 
 		// Cleanup function to clear interval
 		return () => clearInterval(interval);
@@ -34,6 +34,16 @@ function TaskList() {
 			alert('Task deleted successfully!');
 		} catch (error) {
 			console.error('Error deleting task:', error);
+		}
+	};
+
+	const handleTaskMarkComplete = async (e, id) => {
+		e.preventDefault();
+		try {
+			await axios.put(`http://localhost:8080/tasks/${id}/complete`);
+			alert('Task marked as completed successfully!');
+		} catch (error) {
+			console.error('Error marking task as completed:', error);
 		}
 	};
 
@@ -62,6 +72,17 @@ function TaskList() {
 								<p>
 									<strong>Completed:</strong> {task.completed ? 'Yes' : 'No'}
 								</p>
+								<button
+									disabled={task.completed}
+									className={
+										task.completed
+											? 'bg-gray-500 text-white px-4 py-2 rounded-lg cursor-not-allowed'
+											: 'bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600'
+									}
+									onClick={(e) => handleTaskMarkComplete(e, task.id)}>
+									Mark Complete
+								</button>
+
 								<button
 									className='bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600'
 									onClick={(e) => handleTaskDelete(e, task.id)}>
