@@ -60,6 +60,7 @@ The frontend will run on port 3000 by default.
 - Axios: Promise-based HTTP client for making requests to the backend API.
 - Tailwind CSS: Utility-first CSS framework for styling components.
 
+## Curl API Example
 ```bash
 # Retrieve all tasks (GET /tasks)
 curl http://localhost:8080/tasks
