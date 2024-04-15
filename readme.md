@@ -24,7 +24,7 @@ The backend of the Task Manager is built with Java Spring Boot, providing RESTfu
 
 The frontend of the Task Manager is built with React, providing a user interface to interact with the backend API. It uses the following components:
 
-- TaskList: Displays a list of tasks fetched from the backend every 5 seconds.
+- TaskList: Displays a list of tasks fetched from the backend every 3 seconds.
 - CreateTask: Allows users to create a new task by providing a title, description, due date, and priority.
 - UpdateTask: Allows users to update an existing task by providing the task ID along with updated information.
 - DeleteTask: Allows users to delete a task by providing the task ID.
