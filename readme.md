@@ -1,6 +1,6 @@
 # Task Manager App
 
-This is a Task Manager application built with Java Spring Boot for the backend and React for the frontend.
+This Task Manager application is built with Java Spring Boot for the backend and React for the frontend.
 
 ## Overview
 
@@ -18,6 +18,7 @@ The backend of the Task Manager is built with Java Spring Boot, providing RESTfu
   - POST /tasks: Create a new task.
   - PUT /tasks/{id}: Update an existing task.
   - DELETE /tasks/{id}: Delete a task by ID.
+  - PUT /task/{id}/complete: Mark a task as complete.
 
 ## Frontend
 
