@@ -30,7 +30,7 @@ function CreateTask() {
 			dueDate: '',
 			priority: '',
 			completed: false,
-		})
+		});
 	};
 
 	return (

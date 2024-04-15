@@ -1,6 +1,5 @@
 import TaskList from './components/TaskList';
 import CreateTask from './components/CreateTask';
-// import UpdateTask from './components/UpdateTask';
 
 function App() {
 	return (
@@ -10,7 +9,6 @@ function App() {
 			</h1>
 			<TaskList />
 			<CreateTask />
-			{/* <UpdateTask /> */}
 		</>
 	);
 }
