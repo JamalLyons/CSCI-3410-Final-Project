@@ -1,12 +1,127 @@
 [
   {
-    "name": "Buddy",
-    "age": 3,
-    "breed": "Golden Retriever"
-  },
-  {
     "name": "Max",
     "age": 2,
     "breed": "Labrador Retriever"
+  },
+  {
+    "name": "Bella",
+    "age": 3,
+    "breed": "German Shepherd"
+  },
+  {
+    "name": "Charlie",
+    "age": 1,
+    "breed": "Golden Retriever"
+  },
+  {
+    "name": "Lucy",
+    "age": 4,
+    "breed": "Beagle"
+  },
+  {
+    "name": "Cooper",
+    "age": 2,
+    "breed": "Bulldog"
+  },
+  {
+    "name": "Daisy",
+    "age": 5,
+    "breed": "Poodle"
+  },
+  {
+    "name": "Rocky",
+    "age": 3,
+    "breed": "Boxer"
+  },
+  {
+    "name": "Molly",
+    "age": 2,
+    "breed": "Dachshund"
+  },
+  {
+    "name": "Tucker",
+    "age": 1,
+    "breed": "Shih Tzu"
+  },
+  {
+    "name": "Lily",
+    "age": 4,
+    "breed": "Yorkshire Terrier"
+  },
+  {
+    "name": "Duke",
+    "age": 3,
+    "breed": "Rottweiler"
+  },
+  {
+    "name": "Sadie",
+    "age": 2,
+    "breed": "Siberian Husky"
+  },
+  {
+    "name": "Bailey",
+    "age": 4,
+    "breed": "Border Collie"
+  },
+  {
+    "name": "Oliver",
+    "age": 2,
+    "breed": "Doberman Pinscher"
+  },
+  {
+    "name": "Zoey",
+    "age": 3,
+    "breed": "Dalmatian"
+  },
+  {
+    "name": "Riley",
+    "age": 2,
+    "breed": "Cavalier King Charles Spaniel"
+  },
+  {
+    "name": "Luna",
+    "age": 1,
+    "breed": "Australian Shepherd"
+  },
+  {
+    "name": "Jack",
+    "age": 5,
+    "breed": "Jack Russell Terrier"
+  },
+  {
+    "name": "Buddy",
+    "age": 3,
+    "breed": "Basset Hound"
+  },
+  {
+    "name": "Bailey",
+    "age": 2,
+    "breed": "Bernese Mountain Dog"
+  },
+  {
+    "name": "Sophie",
+    "age": 4,
+    "breed": "Shetland Sheepdog"
+  },
+  {
+    "name": "Maggie",
+    "age": 1,
+    "breed": "Maltese"
+  },
+  {
+    "name": "Lola",
+    "age": 3,
+    "breed": "French Bulldog"
+  },
+  {
+    "name": "Bear",
+    "age": 2,
+    "breed": "Great Dane"
+  },
+  {
+    "name": "Max",
+    "age": 4,
+    "breed": "Pomeranian"
   }
 ]
