@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Buddy",
+    "age": 3,
+    "breed": "Golden Retriever"
+  },
+  {
+    "name": "Max",
+    "age": 2,
+    "breed": "Labrador Retriever"
+  }
+]
