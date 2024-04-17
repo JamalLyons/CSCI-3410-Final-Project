@@ -27,4 +27,10 @@ public class SearchController {
         List<Dog> dogs = searchService.searchDogByBreed(breed, ageFilter);
         return new ResponseEntity<>(dogs, HttpStatus.OK);
     }
+
+    @GetMapping("/name")
+    public ResponseEntity<List<Dog>> searchDogByName(@RequestParam(required = true) String name, @RequestParam(required = false) Integer ageFilter) {
+        List<Dog> dogs = searchService.searchDogByName(name, ageFilter);
+        return new ResponseEntity<>(dogs, HttpStatus.OK);
+    }
 }
