@@ -3,9 +3,6 @@ package project.jamal.app;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import project.jamal.app.utils.Dog;
-import project.jamal.app.utils.Database;
-
 import java.util.ArrayList;
 import java.util.List;
 

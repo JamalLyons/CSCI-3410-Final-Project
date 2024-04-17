@@ -1,4 +1,4 @@
-package project.jamal.app.utils;
+package project.jamal.app;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;

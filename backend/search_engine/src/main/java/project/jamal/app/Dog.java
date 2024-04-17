@@ -1,4 +1,4 @@
-package project.jamal.app.utils;
+package project.jamal.app;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
