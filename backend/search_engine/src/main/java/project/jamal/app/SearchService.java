@@ -16,8 +16,22 @@ public class SearchService {
         this.db = db;
     }
 
+    // Gets all the dog information from the database
     public List<Dog> getAllDogs() {
         return this.db.getDogs();
+    }
+
+    // Get all the dogs filtered by an age
+    public List<Dog> searchDogByAge(Integer age) {
+        List<Dog> dogs = new ArrayList<>();
+
+        for (Dog d : this.getAllDogs()) {
+            if (d.getAge() == age) {
+                dogs.add(d);
+            }
+        }
+
+        return dogs;
     }
 
     // Search a dog by its breed.
@@ -33,7 +47,6 @@ public class SearchService {
     }
 
     // Search a dog.
-    // Internal method used by other caller functions
     private List<Dog> searchDog(String query, Integer ageFilter) {
         List<Dog> matchingDogs = new ArrayList<>();
 

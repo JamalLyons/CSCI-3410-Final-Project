@@ -29,7 +29,7 @@ public class Database {
             Type dogListType = new TypeToken<List<Dog>>(){}.getType();
             dogs = gson.fromJson(reader, dogListType);
 
-            System.out.println("Loaded " + dogs.size() + " dogs into memory!");
+            System.out.println("[INFO] Loaded " + dogs.size() + " dogs into server memory.");
 
             reader.close();
         } catch (IOException e) {

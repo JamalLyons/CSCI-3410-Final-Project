@@ -16,7 +16,14 @@ public class SearchController {
     private SearchService searchService;
 
     @GetMapping
-    public ResponseEntity<List<Dog>> getAllDogs() {
+    public ResponseEntity<List<Dog>> getAllDogs(@RequestParam(required = false) Integer age) {
+        // If the age query param is passed when we will get all the dogs with the select age
+        if (age != null) {
+            List<Dog> dogs = searchService.searchDogByAge(age);
+            return new ResponseEntity<>(dogs, HttpStatus.OK);
+        }
+
+        // We return all the dogs to the client
         List<Dog> dogs = searchService.getAllDogs();
         return new ResponseEntity<>(dogs, HttpStatus.OK);
     }
