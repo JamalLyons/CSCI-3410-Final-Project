@@ -4,15 +4,38 @@ Jamal Lyons | CSCI 3410 | April 16th 2024
 
 ## Project Outline
 
-...
+A web application that facilitates searching for dogs based on various criteria such as name, breed, and age. Technologies such as
+[Next.js](https://nextjs.org/docs) and [Java Spring](https://spring.io) have been used to create a search engine for dogs.
+Users interact with the application through a web interface to input their search criteria and view the search results.
+The backend of the application processes these search requests and retrieves relevant data from the database. The frontend
+displays the search results to the user in a user-friendly format.
 
-## Project Structure
+- [The Backend](./backend/search_engine/src/main/java/project/jamal/app/) contains the java code.
+- [The Frontend](./frontend/) contains the react.js code.
 
-...
+### Data Structure
 
-## Project Usage
+- Entities: Dog
+- Dog Attributes: Name, Breed, Age
+- Relationships: Each dog has a name, age and belongs to a specific breed
 
-...
+### Abstract Data Types (ADT)
+
+- Operations: searchDogByName(), searchDogByBreed(), searchDogByAge(), etc.
+- Attributes: name: string, breed: string, age: number (optional)
+
+### Design Overview
+
+- Frontend:
+  SearchBar: Allows users to input search criteria (name, breed, age) and initiate search requests.
+  DisplaySearchResults: Component to display search results to the user.
+
+- Backend:
+  SearchService: Processes search requests and retrieves data from the database.
+  DatabaseService: Handles interactions with the database, such as querying for dogs based on search criteria.
+
+- Database:
+  Stores dog information, including name, breed, and age.
 
 ### API Endpoints
 
@@ -20,7 +43,7 @@ Jamal Lyons | CSCI 3410 | April 16th 2024
 - GET /api/search/breed
 - GET /api/search/name
 
-### Example Curl Endpoints
+## Demo Curl Endpoints
 
 `curl http://localhost:8080/api/search`
 
