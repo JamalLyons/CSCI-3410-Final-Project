@@ -1,4 +1,4 @@
-# Simple Dog Search Algorithm
+# Dog Search Algorithm
 
 Jamal Lyons | CSCI 3410 | April 16th 2024
 
@@ -7,7 +7,7 @@ Jamal Lyons | CSCI 3410 | April 16th 2024
 A web application that facilitates searching for dogs based on various criteria such as name, breed, and age. Technologies such as
 [Next.js](https://nextjs.org/docs) and [Java Spring](https://spring.io) have been used to create a search engine for dogs.
 Users interact with the application through a web interface to input their search criteria and view the search results.
-The backend of the application processes these search requests and retrieves relevant data from the database. The frontend
+The application's backend processes these search requests and retrieves relevant data from the database. The front end
 displays the search results to the user in a user-friendly format.
 
 - [The Backend](./backend/search_engine/src/main/java/project/jamal/app/) contains the java code.
@@ -17,7 +17,9 @@ displays the search results to the user in a user-friendly format.
 
 - Entities: Dog
 - Dog Attributes: Name, Breed, Age
-- Relationships: Each dog has a name, age and belongs to a specific breed
+- Relationships: Each dog has a name, and age and belongs to a specific breed
+
+- Hashmap 
 
 ### Abstract Data Types (ADT)
 
