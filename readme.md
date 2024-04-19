@@ -2,6 +2,8 @@
 
 Jamal Lyons | CSCI 3410 | April 16th 2024
 
+[YouTube Video Demo](https://www.youtube.com/watch?v=-J3pPftuoGQ)
+
 ## Project Outline
 
 A web application that facilitates searching for dogs based on various criteria such as name, breed, and age. Technologies such as
