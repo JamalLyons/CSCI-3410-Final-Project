@@ -13,13 +13,21 @@ displays the search results to the user in a user-friendly format.
 - [The Backend](./backend/search_engine/src/main/java/project/jamal/app/) contains the java code.
 - [The Frontend](./frontend/) contains the react.js code.
 
-### Data Structure
+### Data Structures Used
+
+- Hashmap
+- ArrayList
+- List
+
+Classes:
 
 - Entities: Dog
 - Dog Attributes: Name, Breed, Age
 - Relationships: Each dog has a name, and age and belongs to a specific breed
 
-- Hashmap 
+### Algorithms Used
+
+- [Levenshtein Distance](https://en.wikipedia.org/wiki/Levenshtein_distance) String Matching Algorithm
 
 ### Abstract Data Types (ADT)
 
