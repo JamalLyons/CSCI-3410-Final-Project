@@ -1,5 +1,5 @@
 import { Dog } from "@/types";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const API_BASE_URL = "http://localhost:8080/api";
 
