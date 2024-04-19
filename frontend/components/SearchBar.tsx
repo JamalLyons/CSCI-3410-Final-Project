@@ -65,6 +65,7 @@ const SearchBar: FC<SearchBarProps> = ({}) => {
           disabled={dogs.length === 0}
           onClick={() => {
             setSearchTerm("");
+            setAgeFilter(null);
             resetDogs();
           }}
           className={
